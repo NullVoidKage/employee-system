@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: Project
+server:
+  port: 8080
+#debug:
+#  true
+
+---
+spring:
+  profile: dev
+  application:
+    name: Project
+  server:
+    port: 9090
+
+---
+spring:
+  profiles: sit
+  application:
+    name: Project
+  server:
+    port: 7070
+
+---
+
+spring:
+  profile: dev
+  application:
+    name: Project
+  server:
+    port: 4431
